@@ -55,7 +55,7 @@ const App: React.FC = () => {
     <div className="app">
       <header className="app-header">
         <h1>📄 AI-Powered PDF Data Extractor</h1>
-        <p>Upload a PDF to extract tabular data using AI</p>
+        <p>Transform your PDF documents into structured data with the power of artificial intelligence</p>
       </header>
 
       <main className="app-main">
@@ -64,19 +64,19 @@ const App: React.FC = () => {
         {loading && (
           <div className="loading">
             <div className="spinner"></div>
-            <p>Processing PDF... This may take a moment.</p>
+            <p>🤖 AI is analyzing your PDF... Please wait while we extract the data.</p>
           </div>
         )}
 
         {error && (
           <div className="error">
-            <p>❌ {error}</p>
+            <p>⚠️ {error}</p>
           </div>
         )}
 
         {extractedData && (
           <div className="results">
-            <h2>Extracted Data</h2>
+            <h2>✨ Extracted Data</h2>
             {extractedData.data.summary && (
   <div className="summary">
     <h3>Summary</h3>

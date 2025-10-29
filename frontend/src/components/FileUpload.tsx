@@ -100,15 +100,15 @@ const FileUpload: React.FC<FileUploadProps> = ({ onFileUpload, disabled }) => {
           style={{ display: 'none' }}
         />
         
-        <div className="upload-icon">📤</div>
+        <div className="upload-icon">�</div>
         <p>Drag and drop your PDF here</p>
         <p className="upload-or">OR</p>
         <button
           onClick={() => fileInputRef.current?.click()}
           disabled={disabled}
-          className="upload-button"
+          className="upload-button btn-primary"
         >
-          Browse Files
+          📁 Browse Files
         </button>
         
         <p className="file-requirements">
